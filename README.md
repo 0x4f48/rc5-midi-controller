@@ -5,7 +5,7 @@
 
 The default drum level of the RC-5 is 100, and it is too loud. Although you can adjust it in its menu, it takes multiple button pressing and knob turning. If you have used an older model like RC-3, the adjustment is as simple as just turning a knob. Since the RC-5 supports MIDI control, I decided to make a single knob drum level controller.
 
-![RC5 MIDI controller](https://github.com/0x4f48/rc5-midi-controller/blob/master/misc/rc5-midi-controller.jpg)
+![RC5 MIDI controller](https://github.com/0x4f48/rc5-midi-controller/blob/main/misc/rc5-midi-controller.jpg)
 
 It is a simple function device, and don't want to spend too much time. This though brought me followings.
 
