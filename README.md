@@ -1,4 +1,4 @@
-# rc5-midi-controller
+# BOSS RC-5 MIDI Controller
 
 
 ## Readme
@@ -7,7 +7,9 @@ The default drum level of the RC-5 is 100, and it is too loud. Although you can 
 
 ![RC5 MIDI controller](https://github.com/0x4f48/rc5-midi-controller/blob/main/misc/rc5-midi-controller.jpg)
 
-It is a simple function device, and don't want to spend too much time. This though brought me followings.
+![RC5 MIDI controller2](https://github.com/0x4f48/rc5-midi-controller/blob/main/misc/rc5-midi-controller2.jpg)
+
+It is a simple function device, and I don't want to spend too much time to build it. This thought brought me followings.
 
 	• Use MicroPython for quick software development.
 	• Use existing modules to avoid custom PCB fabrication.
@@ -16,19 +18,19 @@ It is a simple function device, and don't want to spend too much time. This thou
 
 ### Parts
 
-	• I2C OLED display (128x64)
-	• DC-DC module (9V to 5V)
-	• ESP32 module
-	• KY-040 rotary encode
-	• Power jack
-	• 3.5mm stereo jack
-    • 220 ohm resistor
+	• I2C OLED display (128x64) x 1
+	• DC-DC module (9V to 5V) x 1
+	• ESP32 module x 1
+	• KY-040 rotary encode x 1
+	• Power jack x 2
+	• 3.5mm stereo jack x 2
+    • 220 ohm resistor x 1
 
 
 ### Installing Software
 
 	• Install MicroPython firmware (https://micropython.org/download/ESP32_GENERIC/) to a ESP dev kit board.
-	• Copy python files intot board. (https://www.pythontutorials.net/blog/micropython-rshell/)
+	• Copy python files into the board. (https://www.pythontutorials.net/blog/micropython-rshell/)
 
 
 ### Building Controller
@@ -40,7 +42,7 @@ I designed 3D models quickly and assemble the parts in it.
 
 Check the schematics to assemble the parts.
 
-    • Input power lines (9V) is directly hokked up to the output jack for RC-5.
+    • Input power lines (9V) is directly hooked up to the output jack for RC-5.
 
 
 
@@ -51,6 +53,6 @@ Check the schematics to assemble the parts.
 		○ CC #80: DRUM LEVEL2
 		○ CC #81: TRACK LEVEL 2
 	• Controller sends initial drum level, which is 50,  as soon as it boots up.
-		○ Turning the encoder will increase or decrease drum level.
+		○ Turning the encoder will increase or decrease drum/track level.
 		○ Pushing the encoder will switch its mode to track level mode. Default track level is 100.
 
